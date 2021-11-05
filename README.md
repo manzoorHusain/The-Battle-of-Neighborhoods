@@ -1,5 +1,5 @@
 # The Battle of Neighborhoods  Finding a Better Place in Scarborough, Toronto
-## 1. Introduction:
+## 📌1. Introduction
 The purpose of this Project is to help people in exploring better facilities around their neighborhood. It will help people making smart and efficient decision on selecting great neighborhood out of numbers of other neighborhoods in Scarborough, Toranto.
 
 Lots of people are migrating to various states of Canada and needed lots of research for good housing prices and reputated schools for their children. This project is for those people who are looking for better neighborhoods. For ease of accessing to Cafe, School, Super market, medical shops, grocery shops, mall, theatre, hospital, like minded people, etc.
@@ -9,16 +9,16 @@ This Project aim to create an analysis of features for a people migrating to Sca
 It will help people to get awareness of the area and neighborhood before moving to a new city, state, country or place for their work or to start a new fresh life.
 
 
-## 2. Data Section
 
-Data Link: https://en.wikipedia.org/wiki/List_of_postal_codes_of_Canada:_M 
+## 📁2. Data Section
 
-Will use Scarborough dataset which we scrapped from wikipedia on Week 3. Dataset consisting of latitude and longitude, zip codes.
-
-
-#### Foursquare API Data:
-
-We will need data about different venues in different neighborhoods of that specific borough. 
+For this project we need these following data:
+1. ***Toronto City data that contains Borough, Neighborhoods along with there latitudes and longitudes***
+* **Data Source:** https://en.wikipedia.org/wiki/List_of_postal_codes_of_Canada:_M
+* **Description:** This Wikipedia page contain all the information we need to explore and cluster the neighborhoods in Toronto. We will be required to scrape the Wikipedia page and wrangle the data, clean it, and then read it into a pandas dataframe so that it is in a structured format like the Toronto dataset.
+2. ***Venue Data using Foursquare API***
+* **Data Source:** https://foursquare.com/developers/apps
+* **Description:**  We will need data about different venues in different neighborhoods of that specific borough. 
 In order to gain that information we will use "Foursquare" locational information. Foursquare is a location data provider with information about all manner of venues and events within an area of interest. Such information includes venue names, locations, menus and even photos. As such, the foursquare location platform will be used as the sole data source since all the stated required information can be obtained through the API. 
 
 After finding the list of neighborhoods, we then connect to the Foursquare API to gather information about venues inside each and every neighborhood. For each neighborhood, we have chosen the radius to be 100 meter.
@@ -33,6 +33,11 @@ The data retrieved from Foursquare contained information of venues within a spec
     6. Venue Latitude
     7. Venue Longitude
     8. Venue Category
+
+
+
+
+
     
 **Map of Scarborough**
 <!-- > ![Map%20of%20Scarborough.png](attachment:Map%20of%20Scarborough.png) -->
